@@ -48,14 +48,14 @@ def main():
 
     with alive_bar(100, title="Calculating download speed", bar="smooth", spinner="dots_waves") as bar:
         for _ in range(100):
-            time.sleep(0.01)  # Simulate progress
+            time.sleep(0.01)  # show progress
             bar()
 
     download_thread.join()
 
     with alive_bar(100, title="Calculating upload speed", bar="smooth", spinner="dots_waves") as bar:
         for _ in range(100):
-            time.sleep(0.01)  # Simulate progress
+            time.sleep(0.01)  # show progress
             bar()
 
     upload_thread.join()
